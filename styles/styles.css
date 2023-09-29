@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -14,8 +15,29 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --purple-color: #5722CD;
+    --blue-color: #4845E4;
+    --pink-color: #ED4385;
+    --black-color: #0C0C0C;
+    --purple-light-color: #F2F0FF;
+    --grey-light-color: #F3F6F9;
+    --grey-color: #7A7A7A;
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--black-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Merriweather, serif;
+}
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
