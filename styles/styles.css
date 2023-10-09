@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     --purple-light-color: #F2F0FF;
     --grey-light-color: #F3F6F9;
     --grey-color: #7A7A7A;
-    --global-margin: 75px 150px;
+    --global-margin: 5rem 10rem;
 }
 /* --------------- 3.2 Other --------------------------- */
 
@@ -131,11 +131,11 @@ nav a:link, nav a:visited {
 }
 
 .introduction_contact_us {
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 /* --------------- 4.3 Projects ------------------- */
-
+/*media*/
 .projects {
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@ nav a:link, nav a:visited {
     text-align: left;
 }
 
-.projects article {
+.projects_article {
     display: flex;
     gap: 6rem;
     justify-content: space-evenly;
@@ -215,7 +215,6 @@ nav a:link, nav a:visited {
 
 .services_article img {
     height: 3rem;
-/*DIT VERBETEREN?*/
 }
 
 .services_article_wrapper h3 {
@@ -279,4 +278,67 @@ nav a:link, nav a:visited {
 
 /* --------------- 4.6 Footer ------------------- */
 
+footer {
+    background-color: var(--black-color);
+    color: var(--grey-light-color);
+    padding: 1rem;
+    font-size: 0.8rem
+}
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 575px) {
+
+    /* --------------- Reusables ----------------------- */
+
+    :root {
+        --global-margin: 5rem 2rem;
+    }
+
+    /* --------------- Typography --------------------- */
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    /* --------------- Header --------------------- */
+
+    nav {
+        justify-content: space-around;
+    }
+
+    /* --------------- Projects --------------------- */
+
+    .projects article {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .projects_article_wrapper {
+        order: 2;
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .projects_article_image_wrapper {
+        order: 1;
+    }
+
+    /* --------------- Services --------------------- */
+
+    .services_article {
+        flex-basis: 420px;
+    }
+
+    .services_article img {
+        height: 3.6rem;
+    }
+
+    /* --------------- Footer --------------------- */
+
+    footer {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+}
