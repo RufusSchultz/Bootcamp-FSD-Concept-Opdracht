@@ -10,12 +10,12 @@
     <nav>
         <span><a href="#projects">Case Studies</a></span>
         <span><a href="#services">Services</a></span>
-        <span><a href="">Contact Us</a></span>
+        <span><a href="#contact">Contact Us</a></span>
     </nav>
     <div class="header_wrapper">
         <h1>Your website is an investment in the succes of your business.</h1>
         <p>We are here to help you succeed!</p>
-        <button>Let's work together</button>
+        <a href="#contact"></a><button>Let's work together</button>
     </div>
     <img src="assets/squiggle_line_stripe.svg" alt="squiggle line stripe" id="squiggle_line_stripe">
 </header>
@@ -34,7 +34,7 @@
             <div class="projects_article_wrapper">
                 <h2>Rolling Stone</h2>
                 <img src="assets/squiggle_line.svg" alt="squiggle_line">
-                <h4>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</h4>
+                <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
                 <span class="project_link"><a href="">view project</a></span>
             </div>
             <span class="projects_article_image_wrapper">
@@ -45,7 +45,7 @@
             <div class="projects_article_wrapper">
                 <h2>Variety</h2>
                 <img src="assets/squiggle_line.svg" alt="squiggle_line">
-                <h4>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</h4>
+                <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
                 <span class="project_link"><a href="">view project</a></span>
             </div>
             <span class="projects_article_image_wrapper">
@@ -56,7 +56,7 @@
             <div class="projects_article_wrapper">
                 <h2>Worth</h2>
                 <img src="assets/squiggle_line.svg" alt="squiggle_line">
-                <h4>A global media platform connecting a community that embraces worth beyond wealth.</h4>
+                <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
                 <span class="project_link"><a href="">view project</a></span>
             </div>
             <span class="projects_article_image_wrapper">
@@ -120,6 +120,32 @@
                 <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and ensure your messaging is focused and targeted.</p>
             </div>
         </article>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact_form_wrapper">
+            <h1>Let's work together</h1>
+            <p>Have a question? Need a quote? Let us know!</p>
+            <div class="contact_form_sub_wrapper">
+                <form onsubmit="javascript-iets" class="contact_form">
+                <span class="contact_form_input_wrapper">
+                    <label for="name_field">Name</label>
+                    <input type="text" id="name_field" name="name" placeholder="Name" class="contact_form_input">
+                </span>
+                    <span class="contact_form_input_wrapper">
+                    <label for="email_field">Email</label>
+                    <input type="email" id="email_field" name="email" placeholder="Email" class="contact_form_input">
+                </span>
+                    <span class="contact_form_input_wrapper">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10" placeholder="Message" class="contact_form_input"></textarea>
+                </span>
+                    <span>
+                    <button type="submit" id="contact_form_button">Send</button>
+                </span>
+                </form>
+            </div>
+        </div>
     </section>
 </main>
 </body>
